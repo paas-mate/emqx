@@ -1,5 +1,7 @@
 FROM shoothzj/base
 
+WORKDIR /opt
+
 ARG TARGETARCH
 
 RUN wget -q https://www.emqx.com/en/downloads/broker/5.0.13/emqx-5.0.13-ubuntu20.04-$TARGETARCH.tar.gz  && \
